@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Nunbers</title>
+    <style> 
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgrey;
+            font-size: large;
+        }
+        h1 {
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Adding values</h1>
+    <input type="number" name="tn1" id="tn1"> +
+    <input type="number" name="tn2" id="tn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <script>
+
+        function somar() {
+            var ne1 = document.getElementById('tn1')
+            var ne2 = document.getElementById('tn2')
+            var res = document.getElementById ('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+        res.innerHTML =  `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+    
+</body>
+</html>

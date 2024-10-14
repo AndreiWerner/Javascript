@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando DIvs</title>
+</head>
+<style>
+    #int{
+        font:normal 2em Arial;
+        background-color: aqua;
+        height: 160px;
+        width: 160px;
+        text-align: center;
+        line-height: 160px;
+    }
+
+</style>
+<body>
+    <div id="int">
+        Interaja..
+    </div>
+
+    <script>
+
+        var bt = window.document.getElementById('int')
+        bt.addEventListener('click', clicar)
+        bt.addEventListener('mouseenter',entrar)
+        bt.addEventListener('mouseout', sair)
+
+
+        function clicar(){
+        bt.style.background = 'black'
+        }
+        function entrar (){
+            bt.style.color = 'red'
+        }
+        function sair (){
+            bt.innerHTML ='Saiuuu'
+        }
+
+    </script>
+</body>
+</html>
